@@ -4,7 +4,7 @@
   "width": 800,
   "height": 500,
   "data": {
-    "url": "https://raw.githubusercontent.com/JiazhouLiu/FIT3179/main/VegaLite/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/kche0169/FIT3179ForW9/main/js/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "projection": {"type": "equalEarth"},
@@ -26,7 +26,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/JiazhouLiu/FIT3179/main/VegaLite/3_choropleth_map/data/covid_10_10_2020.csv"
+              "url": "https://raw.githubusercontent.com/kche0169/FIT3179ForW9/main/data/World_bank_Cereal_Data_new.csv"
             },
             "key": "Country",
             "fields": ["Active"]
@@ -40,8 +40,8 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [10000, 100000, 500000],
-            "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
+            "domain": [20, 100, 3000, 10000],
+            "range": ["#dbead5", "#b7d5ac", "#6eaa5e", "#008000"]
           }
         },
         "tooltip": [
